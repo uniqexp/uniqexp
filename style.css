@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(background.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}
+@media screen and (min-width: 400px) and (max-width: 1600px) {
+    .navbar {
+        width: 90%;
+        height: 50px;
+        margin: auto;
+    }
+}
+.logo{
+    color:aqua;
+    font-size: 35px;
+    font-family: 'Times New Roman';
+    padding-left: 20px;
+    float: left;
+    padding-top: 20px;
+}
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    margin-left: 60px;
+    margin-top: 47px;
+    font-size: 22px;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+ul li a:hover{
+    color: violet;
+}
+.search{
+    width: 300px;
+    float: right;
+    margin-top: 27px;
+    margin-left: 10;
+}
+
+.srch{
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #000090;
+    margin-top: 13px;
+    font-size: 18px;
+    color: #fff;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    background: #000090;
+    border: 2px solid #000090;
+    margin-top: 13px;
+    color: white;
+    font-size: 18px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.form{
+    width: 250px;
+    height: 380px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%, rgba(0,0,0,0.8)50%);
+    clear: both;
+    float: right;
+    margin-top: 27px;
+    margin-left: 10;
+    border-radius: 10px;
+    padding: 25px;
+}
+.form h2{
+    width: 220px;
+    font-family: 'Times New Roman';
+    text-align: center;
+    font-size: 22px;
+    color: #fff;
+    margin: 2px;
+    padding: 10px;
+}
+.form input{
+    width: 240px;
+    height: 35px;
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    letter-spacing: 1px;
+    background: transparent;
+    border-bottom: 2px solid #000090;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    color: #fff;
+    margin-top: 20px;
+}
+.btnn{
+    width: 240px;
+    height:40px;
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    background: #000090;
+    border: none;
+    color: #fff;
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: 0.4s ease;
+}
+.btnn:hover{
+    background: #fff;
+    color: #000090;
+}
+.btnn a{
+    text-decoration: none;
+    font-weight: bold;
+}
+.form .link{
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    padding-top: 20px;
+    text-align: center;
+    color: #fff;
+    
+}
+.form .link a{
+    text-decoration: none;
+}
+.liw{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #fff;
+}
+.icons a{
+    text-decoration: none;
+    color: #fff;
+}
+.icons ion-icon{
+    color: #fff;
+    font-size: 30px;
+    padding-left: 14px;
+    padding-top: 5px;
+    transition: 0.3 ease;
+}
+.icons ion-icon:hover{
+    color:violet;
+}

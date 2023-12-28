@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>UniQexperts</title>	
+		<style>
+		figcaption {
+			border: 1px dotted blue;
+			text-align: center;
+		}		
+		img {
+		  border: 2px solid #959;
+		  margin: 0px 0px 0px 0px;
+		}
+		</style>
+	</head>
+	<body style="background-color:white;">
+		
+		<a href="/"><img src="logo.png" height=100px class="logo" alt="UNIQ experts"/></a>
+		
+		<h1>House Analyzer</h1>
+		<form id="upload-file" method="POST" enctype="multipart/form-data">
+			<input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg" multiple>
+			<input class="btn btn-primary mt-3" type="submit" value="predict image"> 
+		</form>	
+		{% if predictions %} 
+			{%  for i in num %}
+				<div style="float: left; background: #66FF99">  
+					<figcaption>{{predictions[i]}}</figcaption> 
+					<img src="{{paths[i]}}" height=300px style="float:left;" />  
+				</div>
+			{% endfor %}
+		{% endif %}
+		<h1> </h1>
+		<hr width="90%" size="3" color="red"/>
+		<a href="https://www.linkedin.com/in/morteza-hasani-shoreh/">Linkedin</a>
+	</body>
+</html>
